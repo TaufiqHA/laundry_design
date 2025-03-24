@@ -1,0 +1,12 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: light --default, dark --prefersdark, cupcake;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#desk_menu li {
+  @apply hover:bg-teal-300 hover:text-white hover:duration-200 hover:ease-in-out hover:rounded-lg;
+}

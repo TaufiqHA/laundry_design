@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cleany</title>
+    <link href="/src/output.css" rel="stylesheet" />
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body>
+    <!-- navbar start -->
+    <div class="navbar fixed bg-base-100 shadow-sm z-10">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>
+          </div>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+          >
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT US</a></li>
+            <li><a href="#services">SERVICES</a></li>
+            <li><a>TESTIMONY</a></li>
+            <li><a>CONTACT</a></li>
+          </ul>
+        </div>
+        <a class="btn btn-ghost text-2xl text-teal-500">Cleany</a>
+      </div>
+      <div id="desk_menu" class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1 gap-3 font-semibold text-lg">
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a>Testimony</a></li>
+          <li><a>Contact</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <button class="btn btn-md bg-teal-500 text-white rounded-full">
+          Book Now
+        </button>
+      </div>
+    </div>
+    <!-- navbar end -->
+
+    <!-- hero section start -->
+    <section id="home" class="min-h-screen flex justify-center items-center">
+      <div
+        class="container flex flex-col lg:flex-row justify-center items-center gap-50"
+      >
+        <div class="flex flex-col gap-7 px-5">
+          <h2 class="text-3xl lg:text-[90px] font-bold">
+            Professional <span class="block">Laundry Service</span>
+          </h2>
+          <p class="lg:w-xl text-md lg:text-lg font-semibold text-gray-500">
+            Experiense the freshness of perfecly cleaned clothes with our
+            premium laundry service
+          </p>
+          <button
+            class="btn btn-lg w-xs mx-auto lg:mx-0 font-semibold bg-teal-500 rounded-full text-white mt-5"
+          >
+            Book Now
+          </button>
+        </div>
+        <div class="hidden lg:block">
+          <img src="img/laundry animation.png" alt="laundry animation" />
+        </div>
+      </div>
+    </section>
+    <!-- hero section end -->
+
+    <!-- about section start -->
+    <section id="about" class="py-20">
+      <div class="container mx-auto">
+        <div class="w-full flex flex-col justify-center items-center gap-4">
+          <h2 class="text-2xl font-bold lg:text-4xl">About Us</h2>
+          <p class="text-sm lg:text-lg mb-5 font-semibold text-gray-500">
+            Providing quality laundry services since 2020
+          </p>
+        </div>
+        <div class="flex flex-col lg:flex-row p-4 gap-5">
+          <div
+            class="card bg-transparent shadow-md shadow-gray-300 text-black w-80 lg:w-full mx-auto"
+          >
+            <div class="card-body items-center text-center">
+              <i data-feather="star"></i>
+              <h2 class="card-title">Quality Services</h2>
+              <p>Premium cleaning with attention to detail</p>
+            </div>
+          </div>
+          <div
+            class="card bg-transparent shadow-md shadow-gray-300 text-black w-80 lg:w-full mx-auto"
+          >
+            <div class="card-body items-center text-center">
+              <i data-feather="clock"></i>
+              <h2 class="card-title">Fast Turnaround</h2>
+              <p>24-hour service for your convenience</p>
+            </div>
+          </div>
+          <div
+            class="card bg-transparent shadow-md shadow-gray-300 text-black w-80 lg:w-full mx-auto"
+          >
+            <div class="card-body items-center text-center">
+              <i data-feather="feather"></i>
+              <h2 class="card-title">Eco-Freandly</h2>
+              <p>Sustainable cleaning solutions</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about section end -->
+
+    <!-- services section start -->
+    <section id="services" class="py-20 mt-20">
+      <div>
+        <div class="flex flex-col justify-center items-center gap-5">
+          <h2 class="text-2xl lg:text-4xl font-bold">Our Services</h2>
+          <p class="text-sm lg:text-lg font-semibold text-gray-500 mb-5">
+            Comprehensive laundry solutions for all you needs
+          </p>
+        </div>
+        <div
+          class="w-full mt-10 flex flex-col lg:flex-row lg:justify-around gap-5 lg:gap-0"
+        >
+          <div class="card w-96 bg-base-100 shadow-md">
+            <div class="card-body">
+              <span class="badge badge-xs badge-warning">Most Popular</span>
+              <div class="flex justify-between">
+                <h2 class="text-xl font-bold">Wash & Fold</h2>
+                <span class="text-lg">From $2.50/lb</span>
+              </div>
+              <p>Regular laundry service with perfect folding</p>
+              <div class="mt-6">
+                <button class="btn bg-teal-400 btn-block">Booking</button>
+              </div>
+            </div>
+          </div>
+          <div class="card w-96 bg-base-100 shadow-md">
+            <div class="card-body">
+              <div class="flex justify-between">
+                <h2 class="text-xl font-bold">Dry Cleaning</h2>
+                <span class="text-lg">From $6/item</span>
+              </div>
+              <p>Professional care for delicate graments</p>
+              <div class="mt-6">
+                <button class="btn bg-teal-400 btn-block">Booking</button>
+              </div>
+            </div>
+          </div>
+          <div class="card w-96 bg-base-100 shadow-md">
+            <div class="card-body">
+              <div class="flex justify-between">
+                <h2 class="text-xl font-bold">Home Textiles</h2>
+                <span class="text-lg">From $15/item</span>
+              </div>
+              <p>Cleaning for curtains, rugs and more</p>
+              <div class="mt-6">
+                <button class="btn bg-teal-400 btn-block">Booking</button>
+              </div>
+            </div>
+          </div>
+          <div class="card w-96 bg-base-100 shadow-md">
+            <div class="card-body">
+              <div class="flex justify-between">
+                <h2 class="text-xl font-bold">Ironing</h2>
+                <span class="text-lg">From $3/item</span>
+              </div>
+              <p>Professional pressing services</p>
+              <div class="mt-6">
+                <button class="btn bg-teal-400 btn-block">Booking</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- services section end -->
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
